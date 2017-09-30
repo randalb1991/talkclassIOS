@@ -7,15 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2057D781F7FE9E900705E5A /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2057D731F7FE9E700705E5A /* Empty.swift */; };
+		B2057D791F7FE9E900705E5A /* RDPetsModelFlattenAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2057D761F7FE9E700705E5A /* RDPetsModelFlattenAll.swift */; };
+		B2057D7A1F7FE9E900705E5A /* RDTalkClassClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2057D771F7FE9E800705E5A /* RDTalkClassClient.swift */; };
 		B2AF45EB1F7FA99300BE0AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF45EA1F7FA99300BE0AD0 /* AppDelegate.swift */; };
 		B2AF45ED1F7FA99300BE0AD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF45EC1F7FA99300BE0AD0 /* ViewController.swift */; };
 		B2AF45F01F7FA99300BE0AD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AF45EE1F7FA99300BE0AD0 /* Main.storyboard */; };
 		B2AF45F31F7FA99300BE0AD0 /* talkclassIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2AF45F11F7FA99300BE0AD0 /* talkclassIOS.xcdatamodeld */; };
 		B2AF45F51F7FA99300BE0AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AF45F41F7FA99300BE0AD0 /* Assets.xcassets */; };
 		B2AF45F81F7FA99300BE0AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AF45F61F7FA99300BE0AD0 /* LaunchScreen.storyboard */; };
+		B2AF460F1F7FADE200BE0AD0 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AF460D1F7FADE100BE0AD0 /* AWSCore.framework */; };
+		B2AF46101F7FADE200BE0AD0 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2AF460D1F7FADE100BE0AD0 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2AF46111F7FADE200BE0AD0 /* AWSAPIGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AF460E1F7FADE200BE0AD0 /* AWSAPIGateway.framework */; };
+		B2AF46121F7FADE200BE0AD0 /* AWSAPIGateway.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2AF460E1F7FADE200BE0AD0 /* AWSAPIGateway.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B2AF46051F7FAAE700BE0AD0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2AF46121F7FADE200BE0AD0 /* AWSAPIGateway.framework in Embed Frameworks */,
+				B2AF46101F7FADE200BE0AD0 /* AWSCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B2057D731F7FE9E700705E5A /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		B2057D741F7FE9E700705E5A /* AWSApiGatewayBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSApiGatewayBridge.h; sourceTree = "<group>"; };
+		B2057D751F7FE9E700705E5A /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		B2057D761F7FE9E700705E5A /* RDPetsModelFlattenAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDPetsModelFlattenAll.swift; sourceTree = "<group>"; };
+		B2057D771F7FE9E800705E5A /* RDTalkClassClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDTalkClassClient.swift; sourceTree = "<group>"; };
 		B2AF45E71F7FA99300BE0AD0 /* talkclassIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = talkclassIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AF45EA1F7FA99300BE0AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2AF45EC1F7FA99300BE0AD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +51,8 @@
 		B2AF45F41F7FA99300BE0AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2AF45F71F7FA99300BE0AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2AF45F91F7FA99300BE0AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2AF460D1F7FADE100BE0AD0 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		B2AF460E1F7FADE200BE0AD0 /* AWSAPIGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAPIGateway.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2AF46111F7FADE200BE0AD0 /* AWSAPIGateway.framework in Frameworks */,
+				B2AF460F1F7FADE200BE0AD0 /* AWSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +71,8 @@
 		B2AF45DE1F7FA99300BE0AD0 = {
 			isa = PBXGroup;
 			children = (
+				B2AF460E1F7FADE200BE0AD0 /* AWSAPIGateway.framework */,
+				B2AF460D1F7FADE100BE0AD0 /* AWSCore.framework */,
 				B2AF45E91F7FA99300BE0AD0 /* talkclassIOS */,
 				B2AF45E81F7FA99300BE0AD0 /* Products */,
 			);
@@ -61,6 +94,11 @@
 				B2AF45EE1F7FA99300BE0AD0 /* Main.storyboard */,
 				B2AF45F41F7FA99300BE0AD0 /* Assets.xcassets */,
 				B2AF45F61F7FA99300BE0AD0 /* LaunchScreen.storyboard */,
+				B2057D741F7FE9E700705E5A /* AWSApiGatewayBridge.h */,
+				B2057D751F7FE9E700705E5A /* Bridging_Header.h */,
+				B2057D731F7FE9E700705E5A /* Empty.swift */,
+				B2057D761F7FE9E700705E5A /* RDPetsModelFlattenAll.swift */,
+				B2057D771F7FE9E800705E5A /* RDTalkClassClient.swift */,
 				B2AF45F91F7FA99300BE0AD0 /* Info.plist */,
 				B2AF45F11F7FA99300BE0AD0 /* talkclassIOS.xcdatamodeld */,
 			);
@@ -77,6 +115,8 @@
 				B2AF45E31F7FA99300BE0AD0 /* Sources */,
 				B2AF45E41F7FA99300BE0AD0 /* Frameworks */,
 				B2AF45E51F7FA99300BE0AD0 /* Resources */,
+				B2AF46051F7FAAE700BE0AD0 /* Embed Frameworks */,
+				B2AF46061F7FAB4200BE0AD0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -134,14 +174,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B2AF46061F7FAB4200BE0AD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash ${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2AF45E31F7FA99300BE0AD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B2AF45ED1F7FA99300BE0AD0 /* ViewController.swift in Sources */,
+				B2057D791F7FE9E900705E5A /* RDPetsModelFlattenAll.swift in Sources */,
+				B2057D781F7FE9E900705E5A /* Empty.swift in Sources */,
 				B2AF45F31F7FA99300BE0AD0 /* talkclassIOS.xcdatamodeld in Sources */,
 				B2AF45EB1F7FA99300BE0AD0 /* AppDelegate.swift in Sources */,
+				B2057D7A1F7FE9E900705E5A /* RDTalkClassClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +279,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = talkclassIOS/Bridging_Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -269,6 +329,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = talkclassIOS/Bridging_Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -280,10 +341,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EDP4Q54424;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = talkclassIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randalldanibarrientos.talkclassIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = talkclassIOS/Bridging_Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,10 +361,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EDP4Q54424;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = talkclassIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.randalldanibarrientos.talkclassIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = talkclassIOS/Bridging_Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
