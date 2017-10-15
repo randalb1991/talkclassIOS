@@ -17,6 +17,7 @@
 		B2AF46101F7FADE200BE0AD0 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2AF460D1F7FADE100BE0AD0 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2AF46111F7FADE200BE0AD0 /* AWSAPIGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AF460E1F7FADE200BE0AD0 /* AWSAPIGateway.framework */; };
 		B2AF46121F7FADE200BE0AD0 /* AWSAPIGateway.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2AF460E1F7FADE200BE0AD0 /* AWSAPIGateway.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2D866481F93E73D009462A7 /* ApiGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D866471F93E73D009462A7 /* ApiGateway.swift */; };
 		B2E2F46F1F93A86B00D04157 /* structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E2F46E1F93A86B00D04157 /* structures.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		B2AF45F91F7FA99300BE0AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2AF460D1F7FADE100BE0AD0 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
 		B2AF460E1F7FADE200BE0AD0 /* AWSAPIGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAPIGateway.framework; sourceTree = "<group>"; };
+		B2D866471F93E73D009462A7 /* ApiGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiGateway.swift; sourceTree = "<group>"; };
 		B2E2F46E1F93A86B00D04157 /* structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = structures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		B2AF45E91F7FA99300BE0AD0 /* talkclassIOS */ = {
 			isa = PBXGroup;
 			children = (
+				B2D866461F93E6C1009462A7 /* APIGateway */,
 				B2AF45EA1F7FA99300BE0AD0 /* AppDelegate.swift */,
 				B2AF45EC1F7FA99300BE0AD0 /* ViewController.swift */,
 				B2AF45EE1F7FA99300BE0AD0 /* Main.storyboard */,
@@ -93,6 +96,14 @@
 				B2AF45F11F7FA99300BE0AD0 /* talkclassIOS.xcdatamodeld */,
 			);
 			path = talkclassIOS;
+			sourceTree = "<group>";
+		};
+		B2D866461F93E6C1009462A7 /* APIGateway */ = {
+			isa = PBXGroup;
+			children = (
+				B2D866471F93E73D009462A7 /* ApiGateway.swift */,
+			);
+			path = APIGateway;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 				B2AF45ED1F7FA99300BE0AD0 /* ViewController.swift in Sources */,
 				B2AF45F31F7FA99300BE0AD0 /* talkclassIOS.xcdatamodeld in Sources */,
 				B2AF45EB1F7FA99300BE0AD0 /* AppDelegate.swift in Sources */,
+				B2D866481F93E73D009462A7 /* ApiGateway.swift in Sources */,
 				B2E2F46F1F93A86B00D04157 /* structures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
