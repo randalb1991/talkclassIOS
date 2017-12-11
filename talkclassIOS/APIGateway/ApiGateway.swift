@@ -10,7 +10,7 @@ import Foundation
 
 func loginRequest(name username:String, password pw:String, role r: String){
     let str = "{\"username\": \"\(username)\", \"password\": \"\(pw)\", \"role\": \"\(r.lowercased())\"}"
-    var urlRequest = URLRequest(url: URL(string: "https://utakevspc6.execute-api.eu-west-1.amazonaws.com/production/login")!)
+    var urlRequest = URLRequest(url: URL(string: "https://4ybwsxnunf.execute-api.us-east-1.amazonaws.com/dev/talkclass/login")!)
     
     let postData = str.data(using: .utf8)
     
