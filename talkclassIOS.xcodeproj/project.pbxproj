@@ -13,6 +13,7 @@
 		B2AF45F31F7FA99300BE0AD0 /* talkclassIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2AF45F11F7FA99300BE0AD0 /* talkclassIOS.xcdatamodeld */; };
 		B2AF45F51F7FA99300BE0AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AF45F41F7FA99300BE0AD0 /* Assets.xcassets */; };
 		B2AF45F81F7FA99300BE0AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AF45F61F7FA99300BE0AD0 /* LaunchScreen.storyboard */; };
+		B2CE86601FDF39C2002A6BA6 /* Auxiliar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CE865F1FDF39C2002A6BA6 /* Auxiliar.swift */; };
 		B2D866481F93E73D009462A7 /* ApiGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D866471F93E73D009462A7 /* ApiGateway.swift */; };
 		B2E2F46F1F93A86B00D04157 /* structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E2F46E1F93A86B00D04157 /* structures.swift */; };
 		D195417518D1632639A21533 /* Pods_talkclassIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E51B07A793ABD73F3602DB /* Pods_talkclassIOS.framework */; };
@@ -43,6 +44,7 @@
 		B2AF45F41F7FA99300BE0AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2AF45F71F7FA99300BE0AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2AF45F91F7FA99300BE0AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2CE865F1FDF39C2002A6BA6 /* Auxiliar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auxiliar.swift; sourceTree = "<group>"; };
 		B2D866471F93E73D009462A7 /* ApiGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiGateway.swift; sourceTree = "<group>"; };
 		B2E2F46E1F93A86B00D04157 /* structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = structures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 		B2AF45E91F7FA99300BE0AD0 /* talkclassIOS */ = {
 			isa = PBXGroup;
 			children = (
+				B2CE865E1FDF396E002A6BA6 /* Core Data */,
 				B2D866461F93E6C1009462A7 /* APIGateway */,
 				B2AF45EA1F7FA99300BE0AD0 /* AppDelegate.swift */,
 				B2AF45EC1F7FA99300BE0AD0 /* ViewController.swift */,
@@ -100,6 +103,14 @@
 				B2AF45F11F7FA99300BE0AD0 /* talkclassIOS.xcdatamodeld */,
 			);
 			path = talkclassIOS;
+			sourceTree = "<group>";
+		};
+		B2CE865E1FDF396E002A6BA6 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				B2CE865F1FDF39C2002A6BA6 /* Auxiliar.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 		B2D866461F93E6C1009462A7 /* APIGateway */ = {
@@ -246,6 +257,7 @@
 				B2AF45F31F7FA99300BE0AD0 /* talkclassIOS.xcdatamodeld in Sources */,
 				B2AF45EB1F7FA99300BE0AD0 /* AppDelegate.swift in Sources */,
 				B2D866481F93E73D009462A7 /* ApiGateway.swift in Sources */,
+				B2CE86601FDF39C2002A6BA6 /* Auxiliar.swift in Sources */,
 				B2E2F46F1F93A86B00D04157 /* structures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

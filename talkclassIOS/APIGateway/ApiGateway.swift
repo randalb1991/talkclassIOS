@@ -10,7 +10,7 @@ import Foundation
 import AWSCore
 func loginRequest(name username:String, password pw:String, role r: String){
     let str = "{\"username\": \"\(username)\", \"password\": \"\(pw)\", \"role\": \"\(r.lowercased())\"}"
-    var urlRequest = URLRequest(url: URL(string: "https://4ybwsxnunf.execute-api.us-east-1.amazonaws.com/dev/talkclass/login")!)
+    var urlRequest = URLRequest(url: URL(string: "https://4ybwsxnunf.execute-api.us-east-1.amazonaws.com/dev/talkclass/loginwu")!)
     
     let postData = str.data(using: .utf8)
     
@@ -24,9 +24,11 @@ func loginRequest(name username:String, password pw:String, role r: String){
             do{
                 let decoder = JSONDecoder()
                 let credentials = try decoder.decode(Credential.self, from: data)
+                saveCredentials(username: credentials.username, access_key: credentials.access_key, secret_key: credentials.secret_key, session_token: credentials.session_token)
                 print("access key: \(credentials.access_key)")
                 print("secret key: \(credentials.secret_key)")
                 print("session token: \(credentials.session_token)")
+                print("username: \(credentials.username)")
             }catch{
                 print(error.localizedDescription)
             }

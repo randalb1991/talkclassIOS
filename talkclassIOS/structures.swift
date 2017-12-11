@@ -9,6 +9,7 @@
 import Foundation
 
 struct Credential:Codable{
+    var username : String
     var access_key : String
     var secret_key : String
     var session_token: String
